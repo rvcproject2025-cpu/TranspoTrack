@@ -1,0 +1,13 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$database = "its_trip_db"; // make sure ito yung existing db name mo
+
+$conn = new mysqli($servername, $username, $password, $database);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+session_start();
+?>
